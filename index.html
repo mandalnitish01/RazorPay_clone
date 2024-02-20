@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind css</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #color-container {
+        color: white;
+      }
+      #color-container:hover {
+        color: #2b84ea;
+      }
+      #button{
+        color: rgb(255, 255, 255);
+        transition: 0.4s;
+        border: none;
+        width: 120px;
+      }
+      #button:hover{
+        color: #02042a;
+      }
+      #second_button{
+        color: white;
+        border: 1px solid #2b84ea;
+        width: 80px;
+        height: 35px;
+      }
+      #third_button{
+        border: none;
+        width: 120px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: white;
+        transition: .3s;
+      }
+      #third_button:hover
+      {
+        color: #2114cc;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top_content" class="flex justify-center gap-4 h-12 ">
+        <p class="font-mollish text-base font-bold mt-3 text-center ">Razorpay FTX24, India's premier FinTech event is here!</p>
+        <button id="button" class="text-white w-20  h-8 mt-2 bg-lightBlue hover:text-deepBlue">Book Now</button>
+    </div>
+    <nav class="bg-deepBlue">
+      <div
+        class="flex relative w-[1080px] mx-auto items-center justify-between"
+      >
+        <a href="" class="cursor-pointer py-7 pr-7">
+          <img src="images/logo.svg" width="125px" height="30px" alt="" />
+        </a>
+        <ul class="flex space-x-7">
+          <li
+            id="color-container"
+            class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer"
+          >
+            <a href="#">Payments</a>
+            <div
+              class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+          <li
+            id="color-container"
+            class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer"
+          >
+            <a href="#">Banking+</a>
+            <div
+              class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+          <li
+            id="color-container"
+            class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer"
+          >
+            <a href="#">Payroll</a>
+            <div
+              class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+          <li
+            id="color-container"
+            class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer"
+          >
+            <a href="#">Panthers</a>
+            
+          </li>
+          <li
+            id="color-container"
+            class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer"
+          >
+            <a href="#">Resources</a>
+            <div
+              class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+          <li
+            id="color-container"
+            class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer"
+          >
+            <a href="#">Support</a>
+            <div
+              class="absolute w-full h-1 bg-lightBlue bottom-0 hidden group-hover:block transition-all duration-200"
+            ></div>
+          </li>
+          <li
+            id="color-container"
+            class="text-white font-mullish py-7 hover:text-lightBlue flex items-center transition-all duration-200 relative group cursor-pointer"
+          >
+            <a href="#">Pricing</a>
+           
+          </li>
+          
+        </ul>
+
+        <div class="flex gap-5">
+            <img src="images/india-flag.svg" alt="">
+            <button id="second_button" class="cursor-pointer">Log in</button>
+            <button id="third_button" class="text-lightBlue">Sign in <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
